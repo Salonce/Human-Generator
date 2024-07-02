@@ -12,8 +12,8 @@ def describe(person:Person):
         + 'Intelligence: ' + str(person.getIntelligence()) + '\n'
         + '\n'
         + 'Personality traits (Big five): \n'
-        + 'Openess: ' + str(person.getOpen()) + '\n'
-        + 'Conscientiousness: ' + str(person.getConsc()) + '\n'
-        + 'Extraversion: ' + str(person.getExtra()) + '\n'
-        + 'Agreeableness: ' + str(person.getAgreea()) + '\n'
-        + 'Neuroticism: ' + str(person.getNeurot()))
+        + 'Openess: ' + str(person.getPersonality().getOpeness()) + '\n'
+        + 'Conscientiousness: ' + str(person.getPersonality().getConscientiousness()) + '\n'
+        + 'Extraversion: ' + str(person.getPersonality().getExtraversion()) + '\n'
+        + 'Agreeableness: ' + str(person.getPersonality().getAgreeableness()) + '\n'
+        + 'Neuroticism: ' + str(person.getPersonality().getNeuroticism()))
