@@ -4,7 +4,7 @@ from numpy import random
 #Men: IBW (kgs) = 22 × (height in meters)2
 #Women: IBW (kgs) = 22 × (height in meters − 10 cm)2
 
-def getWeight(height, gender):
+def get_weight(height, gender):
     if gender == "male":
         return random.normal(loc=22*(pow(height/100, 2)), scale=7, size=(1))
     if gender == "female":

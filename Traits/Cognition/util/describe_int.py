@@ -2,7 +2,8 @@ from Traits.Cognition.Intelligence import Intelligence
 
 
 def describe_int(intelligence: Intelligence) -> str:
-    return ('-- General intelligence: ' + str(intelligence.get_general_intelligence())
+    return ('Cognitive traits: \n'
+            + '\n' '-- General intelligence: ' + str(intelligence.get_general_intelligence())
             + '\n' + '---- Auditory processing: ' + str(intelligence.get_auditory_processing())
             + '\n' + '---- Fluid reasoning: ' + str(intelligence.get_fluid_reasoning())
             + '\n' + '---- Long term memory: ' + str(intelligence.get_long_term_memory())

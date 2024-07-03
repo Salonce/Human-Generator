@@ -6,13 +6,13 @@ class Personality:
         self.agreeableness = agreeableness
         self.neuroticism = neuroticism
 
-    def getOpeness(self):
+    def get_openess(self):
         return self.openness
-    def getConscientiousness(self):
+    def get_conscientiousness(self):
         return self.conscientiousness
-    def getExtraversion(self):
+    def get_extraversion(self):
         return self.extraversion
-    def getAgreeableness(self):
+    def get_agreeableness(self):
         return self.agreeableness
-    def getNeuroticism(self):
+    def get_neuroticism(self):
         return self.neuroticism
