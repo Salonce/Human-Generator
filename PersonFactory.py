@@ -1,9 +1,9 @@
 from numpy import random
 
 from Person import Person
-from Traits.height import getHeight
-from Traits.intelligence import getIntelligence
-from Traits.weight import getWeight
+from Traits.Physical.height import getHeight
+from Traits.Cognition import IntelligenceFactory
+from Traits.Physical.weight import getWeight
 from Traits.Personality.PersonalityFactory import create_Personality
 
 def create_Person():
@@ -11,6 +11,6 @@ def create_Person():
     height = getHeight(gender)
     weight = getWeight(height, gender)
     personality = create_Personality()
-    intelligence = getIntelligence()
+    intelligence = IntelligenceFactory.create_intelligence()
 
     return Person(gender, height, weight, personality, intelligence)

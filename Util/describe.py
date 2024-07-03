@@ -1,6 +1,12 @@
 from Person import Person
+from Traits.Cognition.util.describe_int import describe_int
 
-def describe(person:Person):
+
+def describe(person: Person):
+
+    int = person.getIntelligence()
+    intdesc = describe_int(int)
+
     print(
         '\n'
         + 'Physical traits: \n'
@@ -9,9 +15,10 @@ def describe(person:Person):
         + 'Weight : ' + str(person.getWeight()) + '\n'
         + '\n'
         + 'Cognitive traits: \n'
-        + 'Intelligence: ' + str(person.getIntelligence()) + '\n'
         + '\n'
-        + 'Personality traits (Big five): \n'
+        + intdesc
+        + '\n'
+        + '\n' + 'Personality traits (Big five): \n'
         + 'Openess: ' + str(person.getPersonality().getOpeness()) + '\n'
         + 'Conscientiousness: ' + str(person.getPersonality().getConscientiousness()) + '\n'
         + 'Extraversion: ' + str(person.getPersonality().getExtraversion()) + '\n'
