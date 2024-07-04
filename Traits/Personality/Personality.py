@@ -1,8 +1,8 @@
-from Traits.Personality.Openness import Openness
-from Traits.Personality.Neuroticism import Neuroticism
-from Traits.Personality.Extraversion import Extraversion
-from Traits.Personality.Conscientiousness import Conscientiousness
-from Traits.Personality.Agreeableness import Agreeableness
+from Traits.Personality.Traits.Openness import Openness
+from Traits.Personality.Traits.Neuroticism import Neuroticism
+from Traits.Personality.Traits.Extraversion import Extraversion
+from Traits.Personality.Traits.Conscientiousness import Conscientiousness
+from Traits.Personality.Traits.Agreeableness import Agreeableness
 
 
 class Personality:
