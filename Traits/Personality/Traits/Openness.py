@@ -21,7 +21,7 @@ class Openness:
         adventurousness = generate_subtrait(openness)
         intellect = generate_subtrait(openness)
         liberalism = generate_subtrait(openness)
-        openness = (imagination + artistic_interests + emotionality + adventurousness + intellect + liberalism) / 6
+        openness = round((imagination + artistic_interests + emotionality + adventurousness + intellect + liberalism) / 6)
 
         return cls(openness, imagination, artistic_interests, emotionality, adventurousness, intellect, liberalism)
 

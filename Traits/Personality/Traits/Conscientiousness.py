@@ -20,7 +20,7 @@ class Conscientiousness:
         achievement_striving = generate_subtrait(conscientiousness)
         self_discipline = generate_subtrait(conscientiousness)
         cautiousness = generate_subtrait(conscientiousness)
-        conscientiousness = (self_efficacy + orderliness + dutifulness + achievement_striving + self_discipline + cautiousness) / 6
+        conscientiousness = round((self_efficacy + orderliness + dutifulness + achievement_striving + self_discipline + cautiousness) / 6)
 
         return cls(conscientiousness, self_efficacy, orderliness, dutifulness, achievement_striving, self_discipline, cautiousness)
 

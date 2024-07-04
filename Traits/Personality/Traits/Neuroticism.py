@@ -20,7 +20,7 @@ class Neuroticism:
         self_consciousness = generate_subtrait(neuroticism)
         immoderation = generate_subtrait(neuroticism)
         vulnerability = generate_subtrait(neuroticism)
-        neuroticism = (anxiety + anger + depression + self_consciousness + immoderation + vulnerability) / 6
+        neuroticism = round((anxiety + anger + depression + self_consciousness + immoderation + vulnerability) / 6)
 
         return cls(neuroticism, anxiety, anger, depression, self_consciousness, immoderation, vulnerability)
 

@@ -22,8 +22,7 @@ class Extraversion:
         activity_level = generate_subtrait(extraversion)
         excitement_seeking = generate_subtrait(extraversion)
         cheerfulness = generate_subtrait(extraversion)
-        extraversion = (
-                                   friendliness + gregariousness + assertiveness + activity_level + excitement_seeking + cheerfulness) / 6
+        extraversion = round((friendliness + gregariousness + assertiveness + activity_level + excitement_seeking + cheerfulness) / 6)
 
         return cls(extraversion, friendliness, gregariousness, assertiveness, activity_level, excitement_seeking,
                    cheerfulness)

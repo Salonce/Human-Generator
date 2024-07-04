@@ -20,7 +20,7 @@ class Agreeableness:
         cooperation = generate_subtrait(agreeableness)
         modesty = generate_subtrait(agreeableness)
         sympathy = generate_subtrait(agreeableness)
-        agreeableness = (trust + morality + altruism + cooperation + modesty + sympathy) / 6
+        agreeableness = round((trust + morality + altruism + cooperation + modesty + sympathy) / 6)
 
         return cls(agreeableness, trust, morality, altruism, cooperation, modesty, sympathy)
 

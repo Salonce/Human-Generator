@@ -1,26 +1,27 @@
-from Traits.Cognition import Intelligence
-from Traits.Personality import Personality
+from Traits.Cognition.Intelligence import Intelligence
+from Traits.Personality.Personality import Personality
+from Traits.Physique.Physique import Physicality
 
 
 class Person:
-    def __init__(self, gender, height, weight, personality: Personality, intelligence: Intelligence):
-        self.gender = gender
-        self.height = height
-        self.weight = weight
+    def __init__(self, physicality: Physicality,
+                 personality: Personality,
+                 intelligence: Intelligence):
+        self.physicality = physicality
         self.personality = personality
         self.intelligence = intelligence
 
-    def getGender(self):
-        return self.gender
+    @classmethod
+    def generate_random(cls):
+        return cls(Physicality.generate_random(),
+                   Personality.generate_random(),
+                   Intelligence.generate_random())
 
-    def getHeight(self):
-        return self.height
+    def get_physicality(self):
+        return self.physicality
 
-    def getWeight(self):
-        return self.weight
-
-    def getPersonality(self):
+    def get_personality(self):
         return self.personality
 
-    def getIntelligence(self):
+    def get_intelligence(self):
         return self.intelligence

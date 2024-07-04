@@ -1,5 +1,5 @@
-import PersonFactory
+from Person import Person
 from describe import describe
 
-person = PersonFactory.create_Person()
+person = Person.generate_random()
 describe(person)
