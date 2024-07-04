@@ -1,5 +1,3 @@
-from numpy import random
-
 from Person import Person
 from Traits.Physical.Height import get_height
 from Traits.Physical.Gender import get_gender

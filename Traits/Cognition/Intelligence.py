@@ -43,6 +43,10 @@ class Intelligence:
         visual_processing = generate_subtype_intelligence(general_intelligence)
         working_memory = generate_subtype_intelligence(general_intelligence)
 
+        general_intelligence = (auditory_processing + fluid_reasoning + long_term_memory + long_term_storage_retrieval
+                                + processing_speed + quantitative_knowledge + reaction_time + reading_and_writing
+                                + visual_processing + working_memory)/10
+
         return cls(general_intelligence,
                    auditory_processing,
                    fluid_reasoning,
