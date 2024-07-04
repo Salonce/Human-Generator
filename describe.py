@@ -5,7 +5,10 @@ from Traits.Physique.describe_physicality import describe_physicality
 
 
 def describe(person: Person):
-    print(''
+    print('\n'
+          + '[Person\'s name]'
+          + '\n'
+          + '\n'
           + '\n' + describe_physicality(person.get_physicality())
           + '\n'
           + '\n' + describe_int(person.get_intelligence())
