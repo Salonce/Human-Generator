@@ -1,5 +1,7 @@
 from numpy import random
-from Traits.Personality.config import mid, sc
 
 def getDefault():
-    return random.normal(loc=mid, scale=sc, size=(1))
+    return random.normal(loc=50, scale=20, size=(1))
+
+def getAdjusted(general):
+    return random.normal(loc=general, scale=10, size=(1))
