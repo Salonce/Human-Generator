@@ -25,18 +25,3 @@ class Personality:
                    Agreeableness.generate_random(),
                    Neuroticism.generate_random(),
                    )
-
-    def get_openness(self):
-        return self.openness
-
-    def get_conscientiousness(self):
-        return self.conscientiousness
-
-    def get_extraversion(self):
-        return self.extraversion
-
-    def get_agreeableness(self):
-        return self.agreeableness
-
-    def get_neuroticism(self):
-        return self.neuroticism

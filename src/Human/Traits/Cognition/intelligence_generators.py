@@ -1,6 +1,7 @@
 from numpy import random
 
-#for general intelligence - g-factor
+# for general intelligence - g-factor
+# males represent slightly higher variance
 def generate_general_intelligence(sex):
     if sex == "Male":
         sd = 15

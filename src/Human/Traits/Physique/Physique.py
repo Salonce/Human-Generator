@@ -15,15 +15,3 @@ class Physique:
         rand_height = physique_generators.get_height(rand_gender)
         rand_weight = physique_generators.get_weight(rand_gender, rand_height)
         return cls(rand_gender, rand_height, rand_weight, rand_skin_color)
-
-    def get_skin_color(self):
-        return self.skin_color
-
-    def get_gender(self):
-        return self.gender
-
-    def get_height(self):
-        return self.height
-
-    def get_weight(self):
-        return self.weight

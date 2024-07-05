@@ -29,8 +29,8 @@ class Intelligence:
         self.working_memory = working_memory  # (Gsm)
 
     @classmethod
-    def generate_random(cls, gender):
-        general_intelligence = generate_general_intelligence(gender)
+    def generate_random(cls, sex):
+        general_intelligence = generate_general_intelligence(sex)
 
         auditory_processing = generate_subtype_intelligence(general_intelligence)
         fluid_reasoning = generate_subtype_intelligence(general_intelligence)
@@ -65,36 +65,3 @@ class Intelligence:
                    reading_and_writing,
                    visual_processing,
                    working_memory)
-
-    def get_general_intelligence(self):
-        return self.general_intelligence
-
-    def get_auditory_processing(self):
-        return self.auditory_processing
-
-    def get_fluid_reasoning(self):
-        return self.fluid_reasoning
-
-    def get_long_term_memory(self):
-        return self.long_term_memory
-
-    def get_long_term_storage_retrieval(self):
-        return self.long_term_storage_retrieval
-
-    def get_processing_speed(self):
-        return self.processing_speed
-
-    def get_quantitative_knowledge(self):
-        return self.quantitative_knowledge
-
-    def get_reaction_time(self):
-        return self.reaction_time
-
-    def get_reading_and_writing(self):
-        return self.reading_and_writing
-
-    def get_visual_processing(self):
-        return self.visual_processing
-
-    def get_working_memory(self):
-        return self.working_memory
