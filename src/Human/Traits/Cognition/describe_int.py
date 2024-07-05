@@ -1,4 +1,4 @@
-from Traits.Cognition.Intelligence import Intelligence
+from src.Human.Traits.Cognition.Intelligence import Intelligence
 
 
 def describe_int(intelligence: Intelligence) -> str:
@@ -14,3 +14,7 @@ def describe_int(intelligence: Intelligence) -> str:
             + '\n' + '---- Reading and writing: [' + str(intelligence.get_reading_and_writing()) + ']'
             + '\n' + '---- Visual processing: [' + str(intelligence.get_visual_processing()) + ']'
             + '\n' + '---- Working memory: [' + str(intelligence.get_working_memory()) + ']')
+
+def describe_int_main(intelligence: Intelligence) -> str:
+    return ('Cognitive traits: \n'
+            + '\n' '-- General intelligence: [' + str(intelligence.get_general_intelligence()) + ']')

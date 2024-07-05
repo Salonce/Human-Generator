@@ -1,4 +1,4 @@
-from Traits.Physique.Physique import Physicality
+from src.Human.Traits.Physique.Physique import Physicality
 
 
 def describe_physicality(physicality: Physicality) -> str:

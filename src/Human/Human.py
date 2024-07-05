@@ -1,9 +1,9 @@
-from Traits.Cognition.Intelligence import Intelligence
-from Traits.Personality.Personality import Personality
-from Traits.Physique.Physique import Physicality
+from src.Human.Traits.Cognition.Intelligence import Intelligence
+from src.Human.Traits.Personality.Personality import Personality
+from src.Human.Traits.Physique.Physique import Physicality
 
 
-class Person:
+class Human:
     def __init__(self, physicality: Physicality,
                  personality: Personality,
                  intelligence: Intelligence):

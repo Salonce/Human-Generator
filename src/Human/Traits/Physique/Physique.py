@@ -1,4 +1,5 @@
-from Traits.Physique import physique_generators
+from src.Human.Traits.Physique import physique_generators
+
 
 class Physicality:
     def __init__(self, gender, height, weight):

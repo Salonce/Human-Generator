@@ -1,4 +1,4 @@
-from Traits.Personality.Personality import Personality
+from src.Human.Traits.Personality.Personality import Personality
 
 
 def describe_personality(personality: Personality) -> str:
