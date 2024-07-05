@@ -3,6 +3,9 @@ from numpy import random
 def get_gender():
     return random.choice(['Male', 'Female'])
 
+def get_skin_color():
+    return random.choice(['Black', 'Brown', 'White', 'Yellow'])
+
 
 def get_height(gender):
     if gender == "Male":

@@ -29,8 +29,8 @@ class Intelligence:
         self.working_memory = working_memory  # (Gsm)
 
     @classmethod
-    def generate_random(cls):
-        general_intelligence = generate_general_intelligence()
+    def generate_random(cls, gender):
+        general_intelligence = generate_general_intelligence(gender)
 
         auditory_processing = generate_subtype_intelligence(general_intelligence)
         fluid_reasoning = generate_subtype_intelligence(general_intelligence)
