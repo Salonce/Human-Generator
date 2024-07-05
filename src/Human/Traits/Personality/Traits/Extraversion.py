@@ -1,4 +1,4 @@
-from src.Human.Traits.Personality.personality_generators import generate_subtrait, generate_trait
+from ..personality_generators import generate_subtrait, generate_trait
 
 
 class Extraversion:

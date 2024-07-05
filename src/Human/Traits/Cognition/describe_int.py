@@ -1,4 +1,4 @@
-from src.Human.Traits.Cognition.Intelligence import Intelligence
+from .Intelligence import Intelligence
 
 
 def describe_int(intelligence: Intelligence) -> str:

@@ -1,4 +1,4 @@
-from src.Human.Traits.Physique import physique_generators
+from . import physique_generators
 
 
 class Physique:

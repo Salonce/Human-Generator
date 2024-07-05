@@ -1,4 +1,4 @@
-from src.Human.Traits.Cognition.intelligence_generators import generate_general_intelligence, generate_subtype_intelligence
+from .intelligence_generators import generate_general_intelligence, generate_subtype_intelligence
 
 # Stratum III: General intelligence (g)
 # Stratum II: Broad abilities, including:

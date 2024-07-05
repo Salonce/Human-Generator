@@ -1,5 +1,5 @@
-from src.Human.Human import Human
-from src.Human.describe import describe
+from Human import Human
+from describe import describe
 
 person = Human.generate_random()
 describe(person)

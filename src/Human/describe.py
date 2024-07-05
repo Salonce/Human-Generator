@@ -1,7 +1,7 @@
 from Human import Human
-from src.Human.Traits.Cognition.describe_int import describe_int, describe_int_main
-from src.Human.Traits.Physique.describe_physique import describe_physique
-from src.Human.Traits.Personality.describe_personality import describe_personality, describe_personality_main
+from Traits.Cognition.describe_int import describe_int, describe_int_main
+from Traits.Physique.describe_physique import describe_physique
+from Traits.Personality.describe_personality import describe_personality, describe_personality_main
 
 
 def describe(person: Human):

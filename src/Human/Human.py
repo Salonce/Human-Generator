@@ -1,6 +1,6 @@
-from src.Human.Traits.Cognition.Intelligence import Intelligence
-from src.Human.Traits.Personality.Personality import Personality
-from src.Human.Traits.Physique.Physique import Physique
+from Traits.Cognition.Intelligence import Intelligence
+from Traits.Personality.Personality import Personality
+from Traits.Physique.Physique import Physique
 
 
 class Human:
